@@ -1,0 +1,22 @@
+{
+  "name": "explain",
+  "version": "1.0.0",
+  "description": "keep your terminal flow by checking commands and command flags using the power explainshell.com right in your terminal ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo setup your test command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgwest/explainsh-cli.git"
+  },
+  "author": "Benjamin West",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgwest/explainsh-cli/issues"
+  },
+  "homepage": "https://github.com/bgwest/explainsh-cli#readme",
+  "devDependencies": {
+    "superagent": "^4.1.0"
+  }
+}
