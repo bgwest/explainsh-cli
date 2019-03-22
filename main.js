@@ -5,3 +5,6 @@ require('dotenv').config();
 const command = process.argv.splice(2, process.argv.length - 2);
 console.log(command);
 const app = require('./src/app');
+
+const commandToRun = app.stringifyCommand(command);
+app.runGetCommand(commandToRun);

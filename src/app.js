@@ -5,16 +5,18 @@ const superagent = require('superagent');
 const { SITE, SUBONE, PARAM } = process.env;
 console.log(SITE, SUBONE, PARAM);
 
-function testHandleParse(received) {
+function stringifyCommand(command) {
 
 }
 
-function testHandleGet() {
-  return superagent.get(`${SITE}/${SUBONE}?${PARAM}=`)
+function runGetCommand(receivedCmd) {
+  return superagent.get(`${SITE}/${SUBONE}?${PARAM}=${receivedCmd}`)
       .then((data) => {
-
+        console.log(data);
       })
       .catch((error) => {
-
+        return error;
       });
 }
+
+module.exports = { runGetCommand, stringifyCommand };
