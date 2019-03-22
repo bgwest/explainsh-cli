@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bgwest/explainsh-cli#readme",
   "devDependencies": {
+    "dotenv": "^7.0.0",
     "striptags": "^3.1.1",
     "superagent": "^4.1.0"
   }
